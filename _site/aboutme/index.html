@@ -1,0 +1,548 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  
+
+  
+
+  <title>Wendy Huang</title>
+
+  
+  <meta name="author" content="Wendy">
+  
+
+  <meta name="description" content="Software Engineer">
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+
+  
+    
+      
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+
+<link href='https://fonts.googleapis.com/css?family=Abel' rel='stylesheet'>
+
+    
+      
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css">
+
+
+<link href='https://fonts.googleapis.com/css?family=Abel' rel='stylesheet'>
+
+    
+      
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic">
+
+
+<link href='https://fonts.googleapis.com/css?family=Abel' rel='stylesheet'>
+
+    
+      
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800">
+
+
+<link href='https://fonts.googleapis.com/css?family=Abel' rel='stylesheet'>
+
+    
+  
+
+  
+    
+      <link rel="stylesheet" href="/assets/css/bootstrap-social.css">
+    
+      <link rel="stylesheet" href="/assets/css/base.css">
+    
+  
+
+  
+    
+      <link rel="stylesheet" href="/assets/css/resume.css">
+    
+      <link rel="stylesheet" href="/assets/css/home.css">
+    
+  
+
+  
+  
+  
+
+  
+
+  <meta property="og:title" content="Wendy Huang">
+  <meta property="og:description" content="Software Engineer">
+
+  
+  <meta property="og:image" content="http://localhost:4000/assets/img/avatar-icon.png">
+  
+
+  
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="http://localhost:4000/aboutme/">
+  <link rel="canonical" href="http://localhost:4000/aboutme/">
+  
+
+  
+  <meta name="twitter:card" content="summary">
+  
+  <meta name="twitter:site" content="@">
+  <meta name="twitter:creator" content="@">
+
+  <meta property="twitter:title" content="Wendy Huang">
+  <meta property="twitter:description" content="Software Engineer">
+
+  
+  <meta name="twitter:image" content="http://localhost:4000/assets/img/avatar-icon.png">
+  
+
+  
+
+
+  
+
+  
+
+</head>
+
+
+<body>
+
+  
+
+
+  <nav class="navbar navbar-expand-xl navbar-light fixed-top navbar-custom top-nav-regular"><button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-navbar" aria-controls="main-navbar" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="main-navbar">
+    <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="/blog">Blog</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/aboutme">About Me</a>
+          </li>
+        <li class="nav-item">
+          <a class="nav-link" id="nav-search-link" href="#" title="Search">
+            <span id="nav-search-icon" class="fa fa-search"></span>
+            <span id="nav-search-text">Search</span>
+          </a>
+        </li></ul>
+  </div>
+
+  
+
+  
+    <div class="avatar-container">
+      <div class="avatar-img-border">
+        <a href="http://localhost:4000/">
+          <img alt="Navigation bar avatar" class="avatar-img" src="/assets/img/avatar-icon.png" />
+        </a>
+      </div>
+    </div>
+  
+
+</nav>
+
+
+
+<div id="search-overlay">
+
+  <div id="nav-search-exit" title="Exit search">✕</div>
+  <input type="text" id="nav-search-input" placeholder="Search">
+  <ul id="search-results-container"></ul>
+  
+  <script src="https://unpkg.com/simple-jekyll-search@latest/dest/simple-jekyll-search.min.js"></script>
+  <script>
+    var searchjson = '[ \
+       \
+        { \
+          "title"    : "Canyons Road Trip - Grand Canyon, Antelope, Zion", \
+          "desc"     : "Canyons Road Trip - Grand Canyon, Antelope, Zion", \
+          "category" : "travel", \
+          "url"      : "/2023-05-28-canyons-roadtrip/", \
+          "date"     : "May 28, 2023" \
+        }, \
+       \
+        { \
+          "title"    : "Taiwan", \
+          "desc"     : "Taiwan", \
+          "category" : "travel", \
+          "url"      : "/2023-04-28-taiwan/", \
+          "date"     : "April 28, 2023" \
+        }, \
+       \
+       \
+        { \
+          "title"    : "Wendy Huang", \
+          "desc"     : "Wendy Huang", \
+          "category" : "page", \
+          "url"      : "/aboutme/", \
+          "date"     : "January 1, 1970" \
+        }, \
+       \
+        { \
+          "title"    : "Blog", \
+          "desc"     : "Blog", \
+          "category" : "page", \
+          "url"      : "/blog/", \
+          "date"     : "January 1, 1970" \
+        }, \
+       \
+        { \
+          "title"    : "_", \
+          "desc"     : "_", \
+          "category" : "page", \
+          "url"      : "/", \
+          "date"     : "January 1, 1970" \
+        }, \
+       \
+        { \
+          "title"    : "Tag Index", \
+          "desc"     : "Tag Index", \
+          "category" : "page", \
+          "url"      : "/tags/", \
+          "date"     : "January 1, 1970" \
+        } \
+       \
+    ]';
+    searchjson = JSON.parse(searchjson);
+
+    var sjs = SimpleJekyllSearch({
+      searchInput: document.getElementById('nav-search-input'),
+      resultsContainer: document.getElementById('search-results-container'),
+      json: searchjson
+    });
+  </script>
+</div>
+
+
+
+
+
+  <!-- TODO this file has become a mess, refactor it -->
+
+
+
+
+
+
+
+<header class="header-section ">
+
+<div class="intro-header no-img">
+  <div class="container-md">
+    <div class="row">
+      <div class="col-xl-8 offset-xl-2 col-lg-10 offset-lg-1">
+        <div class="page-heading">
+          <h1>Wendy Huang</h1>
+          
+            
+              <hr class="small">
+              <span class="page-subheading">Software Engineer</span>
+            
+          
+
+          
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</header>
+
+
+
+
+
+<div class=" container-md " role="main">
+  <div class="row">
+    <div class=" col-xl-8 offset-xl-2 col-lg-10 offset-lg-1 ">
+      
+
+      <div class="wrapper resume">
+  <div class="container intro-container">
+    <h3>About Me</h3>
+    <div class="row clearfix">
+    	<div class="col-xs-12 col-sm-4 col-md-3 no-print">
+    	  <span class="profile-img" style="background-image: url(/assets/img/profile.jpg)"></span>
+      </div>    
+      <div class="col-xs-12 col-sm-8 col-md-9 col-print-12">
+        <p>Hey there! I'm Wendy, a passionate software engineer eager to give you a glimpse of my journey. Over the past 5 years, I've immersed myself in the fascinating world of coding, honing my expertise in languages like Java and Python, while remaining at the forefront of technological advancements that propel our industry. As a curious problem-solver, I love turning ideas into tangible digital solutions. Let's connect and explore the boundless possibilities of the digital realm together!</p>
+      </div>
+    </div>
+
+    <div class="row clearfix layout">
+      <div class="col-sm-12 col-md-3">
+        <h4>Education</h4>
+      </div>
+      <div class="col layout education">
+        <p><b>Cornell University</b><p>
+        <p>Bachelors of Science, Computer Science</p>
+        <p>2014 - 2018</p>
+      </div>
+    </div>
+  </div>
+    
+  <div class="container list-container">
+    <h3>Experience</h3>
+
+    <div>
+      <div class="row clearfix layout title">
+        <div class="col">
+          <h4>NYDIG</h4>
+          <p><b>Senior Software Engineer</b> | June 2021 - May 2023</p>
+        </div>
+      </div>
+      <div class="row clearfix layout">
+        <div class="col content">
+          <p>Led a team to improve account onboarding experience by building out a multi-step account management application. Enabling accounts to live in both editable and published states while maintaining the data approval process.</p>
+          <p>Researched, designed, and developed a new master system that connects customers to all their accounts. Constructed and advocated for a single source of truth and ease of access to customer information.</p>
+          <p>Migrated data pipeline and infrastructure of existing applications to new systems using terraform and Github workflows, significantly reducing infrastructure cost.</p>
+        </div>
+      </div>
+    </div>
+
+    <div>
+      <div class="row clearfix layout title">
+        <div class="col">
+          <h4>Capital One</h4>
+          <p><b>Software Engineer</b> | July 2020 - May 2021</p>
+          <p><b>Associate Software Engineer</b> | September 2019 - July 2020</p>
+        </div>
+      </div>
+      <div class="row clearfix layout">
+        <div class="col content">
+          <p>Created Kubernetes custom resources and endpoints to improve functionality for Capital One’s first open source project, Critical Stack, a Kubernetes container orchestration platform made with strict enterprise environments in mind.</p>
+          <p>Implemented an application marketplace for Critical Stack that allows premade Kubernetes resources to be accessed and downloaded onto clusters.</p>
+        </div>
+      </div>
+       <div class="row clearfix layout title">
+        <div class="col">
+          <p><b>Associate Software Engineer</b> | July 2018 - September 2019</p>
+        </div>
+      </div>
+      <div class="row clearfix layout">
+        <div class="col content">
+          <p>Built APIs and back-end logic for the acquisition and processing of card applications, moving the application off legacy systems and into the cloud.</p>
+          <p>Developed the back-end for a real-time document upload project that allows for customers to access their personalized page to upload all their necessary documents. Eliminated the need for customers to physically mail in their documents, saving time and resources for both the company and the clients.</p>
+        </div>
+      </div>
+    </div>
+
+    <div>
+      <div class="row clearfix layout title">
+        <div class="col">
+          <h4>Johnson & Johnson</h4>
+          <p><b>Software Engineering Co-op</b> | May 2017 - August 2017</p>
+        </div>
+      </div>
+      <div class="row clearfix layout">
+        <div class="col content">
+          <p>Constructed the framework, integrated the database, and built the dashboard for a post surgery project as the tech lead.</p>
+          <p>Implemented a front-end D3 visualization layer for a 4-sprint project to display the connection of two disparate data sources to allow surgeons to interact with the results of a single analytics store and visually explore the output.</p>
+        </div>
+      </div>
+       <div class="row clearfix layout title">
+        <div class="col">
+          <p><b>Software Engineering Co-op</b> | August 2016 - December 2016</p>
+        </div>
+      </div>
+      <div class="row clearfix layout">
+        <div class="col content">
+          <p>Completed 10 sprints and worked through 2 internal releases to help deliver a $6MM project that addresses medication adherence under tight deadlines. Focused mainly on creating a web portal using the Angular2 framework and Symfony.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container text-container">
+    <h3>Leadership Activities</h3>
+    <div class="row clearfix layout">
+      <div class="col-md-12">
+        <div>
+          <div class="row clearfix layout title">
+            <div class="col">
+              <h4>TDP Intern Site Lead</h4>
+              <p><b>Richmond Lead</b> | February 2019 - August 2019</p>
+            </div>
+          </div>
+          <div class="row clearfix layout">
+            <div class="col content">
+              <p>Planned activities for the internship program, including networking events, lunch and learns, and presentations.</p>
+              <p>Organized and led weekly sessions for intern mentors and actively mentored interns.</p>
+            </div>
+          </div>
+        </div>
+        <div>
+          <div class="row clearfix layout title">
+            <div class="col">
+              <h4>Card and Small Business TDP Committee</h4>
+              <p><b>Logistics Lead</b> | August 2018 - July 2019</p>
+            </div>
+          </div>
+          <div class="row clearfix layout">
+            <div class="col content">
+              <p>Organized events such as Hackathons and Lunch & Learns for the Technology Development Program.</p>
+              <p>Engaged in creating the website for Card and Small Business TDPs.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="container list-container">
+    <h3>Technical Skills</h3>
+  
+    <div class="row clearfix layout">
+      <div class="col skill">
+        <div>Python</div>
+        <div class="rating"><b>&#11044; &#11044; &#11044; &#11044; &#11044;</b></div>
+      </div>
+      <div class="col skill">
+        <div>Java</div>
+        <div class="rating"><b>&#11044; &#11044; &#11044; &#11044; &#11044;</b></div>
+      </div>
+      <div class="col skill">
+        <div>Kotlin</div>
+        <div class="rating"><b>&#11044; &#11044; &#11044; &#11044; &#11044;</b></div>
+      </div>
+      <div class="w-100"></div>
+      <div class="col skill">
+        <div>Javascript</div>
+        <div class="rating"><b>&#11044; &#11044; &#11044; &#11044;</b> &#11044;</div>
+      </div>
+      <div class="col skill">
+        <div>HTML/CSS</div>
+        <div class="rating"><b>&#11044; &#11044; &#11044; &#11044;</b> &#11044;</div>
+      </div>
+      <div class="col skill">
+        <div>SQL</div>
+        <div class="rating"><b>&#11044; &#11044; &#11044; &#11044;</b> &#11044;</div>
+      </div>
+      <div class="w-100"></div>
+      <div class="col skill">
+        <div>GoLang</div>
+        <div class="rating"><b>&#11044; &#11044; &#11044;</b> &#11044; &#11044;</div>
+      </div>
+      <div class="col skill">
+        <div>Kubernetes</div>
+        <div class="rating"><b>&#11044; &#11044; &#11044;</b> &#11044; &#11044;</div>
+      </div>
+      <div class="col skill"></div>
+    </div>
+  </div> 
+</div>
+        
+
+      
+
+      
+
+    </div>
+  </div>
+</div>
+
+
+  <footer>
+  <div class="container-md">
+    <div class="row">
+      <div class="col-xl-8 offset-xl-2 col-lg-10 offset-lg-1">
+      
+<ul class="list-inline text-center footer-links"><li class="list-inline-item">
+    <a href="https://github.com/whuang285" title="GitHub">
+      <span class="fa-stack fa-lg" aria-hidden="true">
+        <i class="fas fa-circle fa-stack-2x"></i>
+        <i class="fab fa-github fa-stack-1x fa-inverse"></i>
+      </span>
+      <span class="sr-only">GitHub</span>
+   </a>
+  </li><li class="list-inline-item">
+    <a href="https://linkedin.com/in/whuang285" title="LinkedIn">
+      <span class="fa-stack fa-lg" aria-hidden="true">
+        <i class="fas fa-circle fa-stack-2x"></i>
+        <i class="fab fa-linkedin fa-stack-1x fa-inverse"></i>
+      </span>
+      <span class="sr-only">LinkedIn</span>
+   </a>
+  </li></ul>
+
+      
+      <p class="copyright text-muted">
+      
+        Wendy
+        &nbsp;&bull;&nbsp;
+      
+      2023
+
+      
+
+      
+
+      
+
+      </p>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+  
+  
+    
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha256-4+XzXVhsDmqanXGHaHvgh1gMQKX40OUvDEBTu8JcmNs=" crossorigin="anonymous"></script>
+
+
+  
+    
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+
+
+  
+    
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+
+  
+
+
+
+  
+    <!-- doing something a bit funky here because I want to be careful not to include JQuery twice! -->
+    
+      <script src="/assets/js/base.js"></script>
+    
+  
+
+
+
+  
+    <script src="/assets/js/toc.js"></script>
+  
+
+
+
+
+
+
+
+</body>
+</html>
