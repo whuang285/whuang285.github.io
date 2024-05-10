@@ -9,10 +9,10 @@ tags: [travel]
 toc: true 
 ---
 
-We did a 3 day roadtrip to the canyons starting in Las Vegas. This was a 3 day section of a longer Las Vegas trip.
+A 3-day trip from Las Vegas, we delved into the majestic canyons, a captivating segment of our larger Vegas adventure.
 
 # Itinerary
-Our trip started and ended in Las Vegas (flying in from New York City). We picked up our car rental, stayed a night at a hotel, watched a Shin Lim show on the strip and then started our trip the next morning. 
+Commencing and concluding in Las Vegas, with a flight in from New York City, our journey unfolded with a car rental pickup, a night's stay at a hotel, and a Shin Lim show on the strip before starting our trip the next morning. 
 
 ## Overview: The 4 main legs of the road trip
 1. Las Vegas -> Hoover Dam -> Grand Canyon (4 hours)
@@ -24,14 +24,12 @@ Our trip started and ended in Las Vegas (flying in from New York City). We picke
 
 ## Day 1: Las Vegas to Grand Canyon (South Rim)
 ### Las Vegas -> Hoover Dam -> Grand Canyon (4 hours)
-The drive from Las Vegas to the Grand Canyon took around 4 hours with no pitstops. The drive will take you past the Hoover Dam (an hour out of Las Vegas). There's a lookout point where you can pull over to see the dam. You can also pay to enter to take a closer look at the dam, but we did not do this. We spent half an hour at the lookout point and continued our drive to the Grand Canyon. 
-
-Our destination in the Grand Canyon was the Yavapai Lodge, where we will be spending the night. After arriving in the afternoon, we parked the car at the lodge and took their shuttle to Hopi Point and Mohave Point. (**Note:** *Hermit Road is only accessible via shuttle bus from March 1 to November 30*) 
+Starting from Las Vegas, our 4-hour drive to the Grand Canyon unfolded with a scenic route past the iconic Hoover Dam. While we didn't venture inside, a brief stopover at a lookout point offered a glimpse of its grandeur. Arriving at the Yavapai Lodge in the afternoon, we boarded their shuttle to Hopi Point and Mohave Point, savoring the panoramic views. (**Note:** *Hermit Road is only accessible via shuttle bus from March 1 to November 30*) 
 
 ### Sunset at Grand Canyon (Hopi vs. Mohave)
-Both Hopi and Mohave point have great views of the canyon for sunset. Hopi extends further north and therefore has a nice 180 view of the canyon while part of the view at Mohave is blocked by Hopi Point. One of the nicest views isn't the setting sun but the glow it casts on the rest of the canyon while setting. This means that Hopi Point blocks the east side of the canyon from Mohave Point. However, the downside of Hopi Point is that the return shuttle does **not** stop there and you will have to hike to Mohave Point to catch the return shuttle after sunset. 
+Both Hopi and Mohave point give great views of the canyon at sunset. Hopi extends further north and gives a nice 180 view of the canyon, while Mohave's view gets a bit blocked by Hopi. One of the nicest views isn't the setting sun but the glow it casts on the rest of the canyon while setting. This means that Hopi Point blocks the east side of the canyon from Mohave Point. However, the downside of Hopi Point is that the return shuttle does **not** stop there and you're stuck there until you hike over to Mohave to catch the shuttle back after sunset.
 
-We decided to get off the shuttle at Maricopa Point and hike to Hopi Point. After spending a couple minutes enjoying the view at Hopi Point, we continued our hike to Mohave Point for sunset which allowed us to hop on the return shuttle back to the lodge that arrived right after sunset. 
+Opting for Maricopa Point as our starting point, we trekked to Hopi Point, relishing its expansive vistas before proceeding to Mohave Point for a stunning sunset spectacle. Lucky for us, the return shuttle came right after sunset, so we were back at the lodge in no time.
 
 ![](/assets/img/2023-05-28-canyons-roadtrip/grand-canyon.png)
 
@@ -40,15 +38,15 @@ Another thing to note is that the temperature at night varies drastically from t
 
 ## Day 2: Grand Canyon to Antelope Canyon
 ### Sunrise at Grand Canyon (Yavapai Point)
-Since we staying inside the Grand Canyon, we had to catch the sunrise at Yavapai Point before we left. Another great option is Yaki Point for the sunrise. Yaki Point is further north east and so will have a great view west into the canyon. However, there weren't any parking near there and one would have to hike there or take the shuttle. Yavapai Point is part of the Geology Museum and has a large parking lot for those who would rather drive.
+Before bidding adieu to the Grand Canyon, we caught the sunrise at Yavapai Point, marveling at nature's canvas. Yaki Point offers another prime sunrise spot, albeit with a hike or shuttle ride due to limited parking. It's further north east and has a great view westward into the canyon. Yavapai Point, on the other hand, is part of the Geology Museum and boasts ample parking for those who prefer to drive.
 
 ### Grand Canyon -> Antelope Canyon (2.5 hours)
 <div class="section" markdown="1">
 <div class="paragraphs" markdown="1">
-The drive from the Grand Canyon to Antelope Canyon will take 2.5 hours. A reservation with a tour group is needed to access Antelope Canyon. The tours all start in Page, AZ and are roughly 1.5 hours long. Antelope Canyon is divided into Upper and Lower - 2 separate tours. The Upper Antelope Canyon takes the form of the letter "A" which allows for the light beams. The Lower Antelope Canyon is a "V" shape.
+It's a 2.5-hour drive from the Grand Canyon to Antelope Canyon. Remember, you'll need to book a reservation with a tour group to get access to Antelope Canyon, and they all kick off in Page, AZ. The tours last about 1.5 hours each. Now, Antelope Canyon comes in two flavors: Upper and Lower. The Upper one's shaped like an "A," making it perfect for those iconic light beams. Meanwhile, the Lower Canyon's is the shape of a "V".
 
 {: .box-note}
-**Note:** The Navajo Reservation follows daylight savings time while the rest of Arizona does not. When driving to Page from the Grand Canyon, you will pass through the Reservation so take note of the time changes (depending on the time of year, the time inside Arizona and the Navajo Reservation can be different). Page is not in the Navajo Reservation and follows Arizona time. Be careful with the tour times as sometimes your cell will continue pinging a cell tower inside the Reservation and the time on your cell will be an hour off. It is recommended to set your cell phone time to a specific location instead of letting it automatically update.
+**Note:** Pay attention to time changes when passing through the Navajo Reservation en route from the Grand Canyon to Page. The Reservation observes daylight savings time, unlike the rest of Arizona. This means time variations depending on the season, as Arizona doesn't adjust its clocks. Page itself operates on Arizona time, not Reservation time. Be wary of tour times, as your cell signal might connect to a Reservation tower, causing your phone's time to be off by an hour. To avoid confusion, consider manually setting your phone's time to a specific location rather than relying on automatic updates.
 </div>
 
 <div class="side-img" markdown="1">
@@ -57,11 +55,11 @@ The drive from the Grand Canyon to Antelope Canyon will take 2.5 hours. A reserv
 </div>
 
 ### Horseshoe Bend (bonus)
-Also located nearby in Page, AZ is **Horseshoe Bend**. It is accessed by an easy 30-minute walk.
+Nearby in Page, AZ, **Horseshoe Bend** beckoned with its natural splendor, accessible via a leisurely 30-minute stroll.
 ![](/assets/img/2023-05-28-canyons-roadtrip/horseshoe-bend.png)
 
 ### Lodging
-We decided to drive through Page, AZ after the tour and not stay overnight in the town. The next stop in the roadtrip is Zion Canyon National Park so we decided to stay closer to the park. We stayed overnight in Kanab, UT - a 2 hour drive away from Page, AZ and a 30 minute drive to the east entrance of Zion.
+After the tour, we chose to skip staying overnight in Page, AZ. Since our next stop on the road trip was Zion Canyon National Park, we decided to find accommodation closer to the park. So, we spent the night in Kanab, UT, which was a two-hour drive from Page, AZ, and just a half-hour drive to Zion's east entrance.
 
 ## Day 3: Zion
 <div class="section" markdown="1">
@@ -69,13 +67,13 @@ We decided to drive through Page, AZ after the tour and not stay overnight in th
 ![](/assets/img/2023-05-28-canyons-roadtrip/zion.png){: .left-img}
 </div>
 <div class="paragraphs" markdown="1">
-Parking inside the park fills up early so it is recommended to arrive early. The park opens at 8AM and there was a already a line in. The main parking lot is right by the south entrance to the park. Entering from the east entrance allowed us to avoid all the traffic from the south entrance and the views driving up the eastern portion of Zion was beautiful. There is no clear sign pointing to the parking lot coming down from the northeast so pay attention not to overshoot it and drive out of the park.
+Arriving early is key as parking spots inside the park fill up fast. We found ourselves in a line at the park's opening at 8 AM. The main parking lot sits right by the south entrance. Opting for the east entrance not only spared us the south entrance traffic but treated us to stunning views driving up the eastern part of Zion. Just a heads up, there aren't clear signs for the parking lot coming from the northeast, so watch out to avoid overshooting it and ending up out of the park.
 
-There are 2 main hikes Zion is known for: Angel's Landing and the Narrows. They're both rated as difficult climbs. Angel's Landing needs a permit reserved ahead of time and the Narrows requires the river condition to be just right. Unfortunately, while we were there the river was flowing too fast for us to hike through it and the trail was closed. 
+Zion boasts two famous hikes: Angel's Landing and the Narrows. Both are tough climbs. Angel's Landing requires a permit booked in advance, while the Narrows' hike depends on river conditions. Unfortunately, during our visit, the river was too swift, so the trail was closed.
 
-There are also many easier and shorter hikes in Zion that allows you to take in its beauty. The *Riverside Walk* takes you to the start of the Narrows trail and is an easy and scenic walk. The *Emerald Pools Trails* are also some nice hikes that takes you to higher elevations and to the Emerald Pools.
+But fear not, there are plenty of easier, shorter hikes in Zion to enjoy its beauty. The Riverside Walk is a breezy, scenic stroll leading to the Narrows trailhead. Meanwhile, the Emerald Pools Trails offer picturesque hikes to higher elevations and, you guessed it, the Emerald Pools.
 </div>
 </div>
 
 ### Zion -> Las Vegas (2.5 hours)
-We spent roughly 4 hours hiking and exploring the park but there was so much more one could see in the area, such as Bryce Canyon an hour away. Would recommend checking it out before going to Zion and spending an extra night in the Zion area. We, however, were not able to do this and drove back to Las Vegas that evening.
+After spending the morning exploring Zion, we departed, regretfully unable to extend our adventure to Bryce Canyon. We recommend making a detour for future travelers, as Bryce Canyon, just an hour away, is definitely worth a visit before heading back to Las Vegas. So, bidding farewell to the captivating canyons, we journeyed back to the neon lights of Vegas.
