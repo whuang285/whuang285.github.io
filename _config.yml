@@ -135,10 +135,13 @@ footer-hover-col: "#0085A1"
 site-css:
   - "/assets/css/resume.css"
   - "/assets/css/home.css"
+  - "/assets/css/header.css"
+  - "/assets/css/blog.css"
 
 # If you have common JavaScript files that should be included in every page, list them here
 site-js:
   - "/assets/js/toc.js"
+  - "/assets/js/header.js"
 
 #################################
 # --- Web Analytics Section --- #
