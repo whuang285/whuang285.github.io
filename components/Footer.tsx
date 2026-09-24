@@ -1,1 +1,1 @@
-export function Footer(){return <footer className="footer"><div><strong>Wendy Huang</strong><span>Software Engineer</span></div><p>Built with Next.js · Designed for the web.</p></footer>}
+export default function Footer(){return <footer className="site-footer"><div className="container footer-inner"><span>© {new Date().getFullYear()} Wendy Huang</span><span>Software engineer · Traveler · Curious human</span></div></footer>}

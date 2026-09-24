@@ -1,82 +1,10 @@
-import Link from "next/link";
-import { PostCard } from "../components/PostCard";
-import { posts } from "../content/posts";
-
-export default function Home() {
-  const featured = posts.find((post) => post.featured) ?? posts[0];
-
-  return (
-    <>
-      <section className="hero">
-        <p className="eyebrow">SOFTWARE ENGINEER · NEW YORK</p>
-
-        <h1>
-          I build software, solve messy problems, and make complicated things
-          feel simpler.
-        </h1>
-
-        <p className="hero-copy">
-          I'm Wendy — a software engineer interested in backend systems,
-          infrastructure, and building things that make people's lives a little
-          easier.
-        </p>
-
-        <div className="hero-links">
-          <Link className="button" href="/about/">
-            About me
-          </Link>
-
-          <Link className="text-link" href="/blog/">
-            Read the writing →
-          </Link>
-        </div>
-      </section>
-
-      <section className="home-grid">
-        <div>
-          <p className="section-label">SELECTED WRITING</p>
-
-          {featured && <PostCard post={featured} featured />}
-        </div>
-
-        <aside className="home-aside">
-          <p className="section-label">CURRENTLY</p>
-
-          <p>Software Engineer at Amazon, based in New York.</p>
-
-          <p>Previously NYDIG, Capital One, and Johnson & Johnson.</p>
-
-          <Link href="/about/">More about me →</Link>
-        </aside>
-      </section>
-
-      <section className="experience">
-        <div>
-          <p className="section-label">EXPERIENCE</p>
-        </div>
-
-        <div className="experience-list">
-          <div>
-            <b>Amazon</b>
-            <span>Software Engineer</span>
-          </div>
-
-          <div>
-            <b>NYDIG</b>
-            <span>Senior Software Engineer · 2021–2023</span>
-          </div>
-
-          <div>
-            <b>Capital One</b>
-            <span>Software Engineer · 2018–2021</span>
-          </div>
-
-          <div>
-            <b>Johnson & Johnson</b>
-            <span>Software Engineering Co-op</span>
-          </div>
-        </div>
-      </section>
-    </>
-  );
-}
+import Link from 'next/link';
+import Image from 'next/image';
+import {getPosts} from '@/lib/posts';
+export default function Home(){const posts=getPosts();const featured=posts[0];return <>
+<section className="hero"><div className="container"><div className="eyebrow">Software engineer · New York</div><h1>I build software, solve messy problems, and make complicated things feel simpler.</h1><p>A personal site for Wendy Huang — engineering, travel, and notes from figuring things out along the way.</p><div className="hero-meta"><span>Backend · Full-stack</span><span>Travel writing since 2023</span></div></div></section>
+<section className="section"><div className="container"><div className="section-head"><div><div className="section-label">Writing</div><h2>Recent journeys</h2></div><Link className="link-arrow" href="/blog/">View all writing →</Link></div>
+<div className="featured"><div className="featured-image"><Image src={featured.coverImg} alt="" width={1200} height={700}/></div><div className="featured-copy"><div className="meta">{featured.tags.join(' · ')} · {featured.date}</div><h3>{featured.title}</h3><p>{featured.subtitle}</p><Link className="read-link" href={`/blog/${featured.slug}/`}>Read the story →</Link></div></div></div></section>
+<section className="section"><div className="container experience"><div><div className="section-label">Experience</div><h2>Engineering<br/>background</h2></div><div className="experience-list"><div className="experience-item"><div className="years">2021 — 2023</div><div><h3>NYDIG · Senior Software Engineer</h3><p>Account management, customer data systems, infrastructure migration, Terraform, and GitHub workflows.</p></div></div><div className="experience-item"><div className="years">2018 — 2021</div><div><h3>Capital One · Software Engineer</h3><p>Kubernetes platforms, APIs, application processing, and cloud-based customer experiences.</p></div></div><div className="experience-item"><div className="years">2016 — 2017</div><div><h3>Johnson & Johnson · Software Engineering Co-op</h3><p>Web applications, data visualization, dashboards, and analytics tooling.</p></div></div></div></div></section>
+<section className="section"><div className="container"><div className="section-head"><div><div className="section-label">Explore</div><h2>More writing</h2></div></div><div className="post-grid">{posts.slice(1,4).map(p=><Link className="post-card" key={p.slug} href={`/blog/${p.slug}/`}><div className="post-card-image"><Image src={p.thumbnailImg} alt="" width={700} height={420}/></div><div className="post-card-copy"><div className="meta">{p.date} · {p.readingTime}</div><h3>{p.title}</h3><p>{p.subtitle}</p></div></Link>)}</div></div></section>
+</>}
