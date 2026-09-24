@@ -6,5 +6,4 @@
 .jekyll-metadata
 _site/
 node_modules/
-package-lock.json
 next-env.d.ts
