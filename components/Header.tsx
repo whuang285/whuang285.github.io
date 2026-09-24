@@ -1,2 +1,1 @@
-import Link from 'next/link';
-export function Header(){return <header className="site-header"><div className="nav-wrap"><Link className="brand" href="/">WH<span>.</span></Link><nav><Link href="/">Home</Link><Link href="/blog/">Writing</Link><Link href="/about/">About</Link></nav></div></header>}
+export default function Header(){return <header className="site-header"><nav className="nav"><a className="brand" href="/">Wendy Huang</a><div className="nav-links"><a href="/blog/">Writing</a><a href="/about/">About</a></div></nav></header>}

@@ -1,9 +1,5 @@
-.DS_Store
-._.DS_Store
-**/.DS_Store
-**/._.DS_Store
-
-.jekyll-metadata
-_site/
 node_modules/
-next-env.d.ts
+.next/
+out/
+.DS_Store
+*.log
