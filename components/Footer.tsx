@@ -1,1 +1,10 @@
-export default function Footer(){return <footer className="site-footer"><div className="container footer-inner"><span>© {new Date().getFullYear()} Wendy Huang</span><span>Software engineer · Traveler · Curious human</span></div></footer>}
+export function Footer() {
+  return (
+    <footer className="footer">
+      <div>
+        <span>© {new Date().getFullYear()} Wendy Huang</span>
+      </div>
+      <span>Software engineer · Traveler · Curious human</span>
+    </footer>
+  );
+}

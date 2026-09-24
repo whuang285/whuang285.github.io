@@ -1,34 +1,22 @@
 # Wendy Huang — Personal Site
 
-A modern rewrite of `whuang285.github.io`. The original Jekyll site has been replaced with a Next.js static site while preserving the existing travel posts as source content.
+A complete redesign of the personal site, replacing the old Jekyll presentation with a Next.js static site suitable for GitHub Pages.
 
-## Stack
-
-- Next.js + TypeScript
-- Static export for GitHub Pages
-- `gray-matter` for post metadata
-- `markdown-it` for rendering existing post content
-- Original post images/assets retained under `public/assets`
-
-## Local development
+## Development
 
 ```bash
 npm install
 npm run dev
 ```
 
-## Production build
+## Build
 
 ```bash
 npm run build
 ```
 
-The static site is generated in `out/`.
+The static output is generated in `out/`.
 
-## GitHub Pages
+## Blog migration
 
-This repository is already a `username.github.io` repository, so no `basePath` is required. Publish the contents of `out/` using GitHub Pages, or add a GitHub Actions workflow to automate the build.
-
-## Content
-
-The six original posts are in `content/posts/`. Their Markdown source is intentionally preserved as the content source so the migration does not rewrite or lose the original wording. The presentation layer is completely independent of Jekyll.
+The old Jekyll `_posts` directory is intentionally represented by placeholders for now. Replace the sample objects in `content/posts/index.ts` with the original post data. The article renderer is already separated from the content, so migrating the archive does not require redesigning the UI.
