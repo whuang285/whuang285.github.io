@@ -630,3 +630,209 @@ code {
   color: var(--muted);
 }
 
+/* Editorial travel post */
+
+.feature-image {
+  margin: 3rem 0;
+}
+
+.feature-image img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 2px;
+}
+
+.feature-image figcaption,
+.split-section__image figcaption {
+  margin-top: 0.75rem;
+  color: #777;
+  font-size: 0.8rem;
+  line-height: 1.5;
+}
+
+/* Text + image editorial split */
+
+.split-section {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 3.5rem;
+  gap: 3.5rem;
+  align-items: center;
+  margin: 5rem 0;
+}
+
+.split-section--left .split-section__image {
+  order: -1;
+}
+
+.split-section__text {
+  min-width: 0;
+}
+
+.split-section__image {
+  margin: 0;
+}
+
+.split-section__image img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 2px;
+}
+
+/* Information card */
+
+.info-card {
+  margin: 3rem 0;
+  padding: 1.5rem 1.75rem;
+  border: 1px solid #ddd;
+  background: #f8f8f6;
+}
+
+.info-card h3 {
+  margin: 0 0 1rem;
+  font-size: 0.85rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.info-card__content > :first-child {
+  margin-top: 0;
+}
+
+.info-card__content > :last-child {
+  margin-bottom: 0;
+}
+
+/* Travel tip */
+
+.travel-tip {
+  margin: 3rem 0;
+  padding: 1.25rem 1.5rem;
+  border-left: 3px solid currentColor;
+}
+
+.travel-tip__label {
+  margin-bottom: 0.5rem;
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.travel-tip__content > :first-child {
+  margin-top: 0;
+}
+
+.travel-tip__content > :last-child {
+  margin-bottom: 0;
+}
+
+/* Mobile */
+
+@media (max-width: 700px) {
+  .split-section {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+    margin: 3.5rem 0;
+  }
+
+  .split-section--left .split-section__image {
+    order: initial;
+  }
+
+  .feature-image {
+    margin: 2.5rem 0;
+  }
+}
+
+.photo-pair {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  grid-gap: 2rem;
+  gap: 2rem;
+  margin: 3rem 0;
+}
+
+.photo-pair figure {
+  margin: 0;
+}
+
+.photo-pair img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.photo-pair figcaption {
+  margin-top: 0.75rem;
+  font-size: 0.8rem;
+  color: #777;
+}
+
+@media (max-width: 700px) {
+  .photo-pair {
+    grid-template-columns: 1fr;
+  }
+}
+
+.article-layout {
+  display: grid;
+  grid-template-columns: 180px minmax(0, 1fr);
+  grid-gap: 4rem;
+  gap: 4rem;
+  align-items: start;
+}
+
+.toc {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 2rem;
+  align-self: start;
+  font-size: 0.8rem;
+}
+
+.toc-title {
+  margin-bottom: 1rem;
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.toc a {
+  display: block;
+  margin: 0.55rem 0;
+  color: #777;
+  line-height: 1.4;
+  text-decoration: none;
+}
+
+.toc a:hover {
+  color: inherit;
+}
+
+.article-body {
+  min-width: 0;
+}
+
+@media (max-width: 900px) {
+  .article-layout {
+    display: block;
+  }
+
+  .toc {
+    position: static;
+    margin-bottom: 3rem;
+    padding-bottom: 1.5rem;
+    border-bottom: 1px solid #ddd;
+  }
+
+  .toc a {
+    display: inline-block;
+    margin-right: 1rem;
+  }
+}
+
