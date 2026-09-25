@@ -14,6 +14,12 @@ function createHeadingComponents() {
   const slugger = new GithubSlugger();
 
   return {
+    h1: ({ children }: { children: React.ReactNode }) => {
+      const text = getTextFromChildren(children);
+      const id = slugger.slug(text);
+      return <h1 id={id}>{children}</h1>;
+    },
+
     h2: ({ children }: { children: React.ReactNode }) => {
       const text = getTextFromChildren(children);
       const id = slugger.slug(text);
@@ -114,17 +120,29 @@ export default async function Article({
       </header>
 
       <div className="article-layout">
-        {post.headings.filter((heading) => heading.level <= 2).length > 0 && (
+        {post.headings.length > 0 && (
           <aside className="toc">
             <div className="toc-title">On this page</div>
 
-            {post.headings
-              .filter((heading) => heading.level <= 2)
-              .map((heading) => (
-                <a key={heading.id} href={`#${heading.id}`}>
-                  {heading.text}
-                </a>
-              ))}
+            <nav>
+              {post.headings
+                .filter(
+                  (heading) => heading.text !== post.title && heading.level <= 2
+                )
+                .map((heading) => (
+                  <a
+                    key={heading.id}
+                    href={`#${heading.id}`}
+                    className={
+                      heading.level === 1
+                        ? "toc-link toc-link--section"
+                        : "toc-link toc-link--subsection"
+                    }
+                  >
+                    {heading.text}
+                  </a>
+                ))}
+            </nav>
           </aside>
         )}
 

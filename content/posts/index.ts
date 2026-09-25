@@ -60,7 +60,7 @@ function extractHeadings(content: string): Heading[] {
   return content
     .split("\n")
     .map((line) => {
-      const match = line.match(/^(#{2,3})\s+(.+)$/);
+      const match = line.match(/^(#{1,2})\s+(.+)$/);
 
       if (!match) {
         return null;

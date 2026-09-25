@@ -768,36 +768,60 @@ code {
 
 .article-layout {
   display: grid;
-  grid-template-columns: 180px minmax(0, 1fr);
-  gap: 4rem;
+  grid-template-columns: 200px minmax(0, 1fr);
+  gap: 1rem;
   align-items: start;
 }
 
 .toc {
   position: sticky;
-  top: 2rem;
+  top: 1rem;
   align-self: start;
+  max-height: calc(100vh - 2rem);
+  overflow-y: auto;
+  padding-right: 0.5rem;
   font-size: 0.8rem;
 }
 
 .toc-title {
-  margin-bottom: 1rem;
+  margin-bottom: 1.25rem;
   font-size: 0.7rem;
   font-weight: 600;
   letter-spacing: 0.1em;
   text-transform: uppercase;
 }
 
-.toc a {
-  display: block;
-  margin: 0.55rem 0;
-  color: #777;
-  line-height: 1.4;
-  text-decoration: none;
+.toc nav {
+  display: flex;
+  flex-direction: column;
 }
 
-.toc a:hover {
+.toc-link {
+  display: block;
+  color: #777;
+  line-height: 1;
+  text-decoration: none;
+  transition: color 0.15s ease;
+}
+
+.toc-link:hover {
   color: inherit;
+}
+
+.toc-link--section {
+  margin-top: 0.3rem;
+  font-weight: 500;
+}
+
+.toc-link--section:first-child {
+  margin-top: 0;
+}
+
+.toc-link--subsection {
+  margin-top: 0.08rem;
+  padding-left: 0.7rem;
+  font-size: 0.72rem;
+  color: #999;
 }
 
 .article-body {
@@ -811,13 +835,27 @@ code {
 
   .toc {
     position: static;
-    margin-bottom: 3rem;
-    padding-bottom: 1.5rem;
+    max-height: none;
+    overflow-y: visible;
+    margin-bottom: 2rem;
+    padding-bottom: 1.25rem;
     border-bottom: 1px solid #ddd;
   }
 
-  .toc a {
+  .toc nav {
+    display: block;
+  }
+
+  .toc-link {
     display: inline-block;
     margin-right: 1rem;
+  }
+
+  .toc-link--section {
+    margin-top: 0.5rem;
+  }
+
+  .toc-link--subsection {
+    padding-left: 0;
   }
 }
