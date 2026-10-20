@@ -4,6 +4,12 @@ import GithubSlugger from "github-slugger";
 import { MDXRemote } from "next-mdx-remote/rsc";
 
 import { getPost, posts } from "../../../content/posts";
+import {
+  ScrapbookPhoto,
+  ScrapbookPair,
+  ScrapbookCollage,
+  ScrapbookStory,
+} from "../../../components/Scrapbook";
 
 import FeatureImage from "../../../components/FeatureImage";
 import SplitSection from "../../../components/SplitSection";
@@ -90,11 +96,15 @@ export default async function Article({
     SplitSection,
     InfoCard,
     TravelTip,
+    ScrapbookPhoto,
+    ScrapbookPair,
+    ScrapbookCollage,
+    ScrapbookStory,
     ...headingComponents,
   };
 
   return (
-    <article className="article">
+    <article className={`article article--${post.style}`}>
       <header className="article-head">
         <Link href="/blog/" className="back">
           ← All writing

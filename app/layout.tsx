@@ -1,13 +1,31 @@
-import type { Metadata } from 'next';
-import '../styles/globals.css';
-import { Header } from '../components/Header';
-import { Footer } from '../components/Footer';
+import type { Metadata } from "next";
+import "../styles/globals.css";
+import "../styles/article.css";
+import "../styles/travel-editorial.css";
+import "../styles/scrapbook.css";
+import { Header } from "../components/Header";
+import { Footer } from "../components/Footer";
 
 export const metadata: Metadata = {
-  title: { default: 'Wendy Huang — Software Engineer', template: '%s — Wendy Huang' },
-  description: 'Wendy Huang — software engineer, builder, and writer.',
+  title: {
+    default: "Wendy Huang — Software Engineer",
+    template: "%s — Wendy Huang",
+  },
+  description: "Wendy Huang — software engineer, builder, and writer.",
 };
 
-export default function RootLayout({ children }: { children: React.ReactNode }) {
-  return <html lang="en"><body><Header /><main>{children}</main><Footer /></body></html>;
+export default function RootLayout({
+  children,
+}: {
+  children: React.ReactNode;
+}) {
+  return (
+    <html lang="en">
+      <body>
+        <Header />
+        <main>{children}</main>
+        <Footer />
+      </body>
+    </html>
+  );
 }

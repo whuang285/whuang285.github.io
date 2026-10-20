@@ -9,6 +9,11 @@ export type Heading = {
   level: number;
 };
 
+export type PostStyle =
+  | "article"
+  | "travel-editorial"
+  | "scrapbook";
+
 export type Post = {
   slug: string;
   title: string;
@@ -23,6 +28,7 @@ export type Post = {
   image?: string;
   thumbnailImage?: string;
   headings: Heading[];
+  style: PostStyle;
 };
 
 const postsDirectory = path.join(
@@ -154,6 +160,12 @@ export function getPosts(): Post[] {
 
         headings:
           extractHeadings(content),
+
+        style:
+          data.style === "scrapbook" ||
+          data.style === "travel-editorial"
+            ? data.style
+            : "article",
       };
     })
     .sort(
