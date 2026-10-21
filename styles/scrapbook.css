@@ -1,6 +1,6 @@
 /* Scrapbook styles for the Japan trip MDX post. */
 
-.japan-scrapbook {
+.article-scrapbook {
   --ink: #292821;
   --muted: #777367;
   --paper: #fbf8f0;
@@ -14,19 +14,19 @@
   overflow-wrap: anywhere;
 }
 
-.japan-scrapbook *,
-.japan-scrapbook *::before,
-.japan-scrapbook *::after {
+.article-scrapbook *,
+.article-scrapbook *::before,
+.article-scrapbook *::after {
   box-sizing: border-box;
 }
 
-.japan-scrapbook .intro {
+.article-scrapbook .intro {
   font-size: 1.12rem;
   line-height: 1.8;
   max-width: 48rem;
 }
 
-.japan-scrapbook .route {
+.article-scrapbook .route {
   display: flex;
   flex-wrap: wrap;
   gap: 0.45rem;
@@ -36,7 +36,7 @@
   font-size: 0.9rem;
 }
 
-.japan-scrapbook .route a {
+.article-scrapbook .route a {
   border: 1px solid #ded7c8;
   border-radius: 99px;
   padding: 0.35rem 0.7rem;
@@ -45,12 +45,12 @@
   color: inherit;
 }
 
-.japan-scrapbook .chapter {
+.article-scrapbook .chapter {
   margin: 3.2rem 0;
   min-width: 0;
 }
 
-.japan-scrapbook .chapter-kicker {
+.article-scrapbook .chapter-kicker {
   color: var(--muted);
   text-transform: uppercase;
   letter-spacing: 0.12em;
@@ -58,18 +58,18 @@
   font-weight: 700;
 }
 
-.japan-scrapbook h2 {
+.article-scrapbook h2 {
   margin: 0.25rem 0 0.75rem;
 }
 
-.japan-scrapbook .story {
+.article-scrapbook .story {
   max-width: 48rem;
   line-height: 1.8;
 }
 
 /* Photo collage layouts
    Use one modifier class on each .photo-grid to describe the group. */
-.japan-scrapbook .photo-grid {
+.article-scrapbook .photo-grid {
   display: grid;
   grid-template-columns: repeat(12, minmax(0, 1fr));
   grid-template-rows: min-content;
@@ -79,51 +79,51 @@
   align-items: start;
 }
 
-.japan-scrapbook .photo-slot {
+.article-scrapbook .photo-slot {
   grid-column: span 6;
   min-width: 0;
   margin: 0;
 }
 
 /* One image across the available content width. */
-.japan-scrapbook .photo-grid--single .photo-slot {
+.article-scrapbook .photo-grid--single .photo-slot {
   grid-column: span 12;
 }
 
 /* Two images with equal column widths. */
-.japan-scrapbook .photo-grid--pair .photo-slot {
+.article-scrapbook .photo-grid--pair .photo-slot {
   grid-column: span 6;
 }
 
 /* Three images with equal column widths. */
-.japan-scrapbook .photo-grid--triple .photo-slot {
+.article-scrapbook .photo-grid--triple .photo-slot {
   grid-column: span 4;
 }
 
 /* Wider landscape image beside a narrower portrait image. */
-.japan-scrapbook .photo-grid--landscape-portrait .photo-slot:first-child {
+.article-scrapbook .photo-grid--landscape-portrait .photo-slot:first-child {
   grid-column: span 8;
 }
 
-.japan-scrapbook .photo-grid--landscape-portrait .photo-slot:last-child {
+.article-scrapbook .photo-grid--landscape-portrait .photo-slot:last-child {
   grid-column: span 4;
 }
 
 /* Narrower portrait image beside a wider landscape image. */
-.japan-scrapbook .photo-grid--portrait-landscape .photo-slot:first-child {
+.article-scrapbook .photo-grid--portrait-landscape .photo-slot:first-child {
   grid-column: span 4;
 }
 
-.japan-scrapbook .photo-grid--portrait-landscape .photo-slot:last-child {
+.article-scrapbook .photo-grid--portrait-landscape .photo-slot:last-child {
   grid-column: span 8;
 }
 
-.japan-scrapbook .photo-slot.hero {
+.article-scrapbook .photo-slot.hero {
   grid-column: span 12;
 }
 
 /* Real photos keep their intrinsic aspect ratio; no placeholder heights or cropping. */
-.japan-scrapbook .photo-slot img {
+.article-scrapbook .photo-slot img {
   display: block;
   width: 100%;
   max-width: 100%;
@@ -133,7 +133,7 @@
   margin: 0;
 }
 
-.japan-scrapbook .photo-placeholder {
+.article-scrapbook .photo-placeholder {
   min-height: 175px;
   height: 100%;
   display: flex;
@@ -148,33 +148,33 @@
   color: #625b4e;
 }
 
-.japan-scrapbook .photo-slot.wide .photo-placeholder {
+.article-scrapbook .photo-slot.wide .photo-placeholder {
   min-height: 220px;
 }
 
-.japan-scrapbook .photo-slot.hero .photo-placeholder {
+.article-scrapbook .photo-slot.hero .photo-placeholder {
   min-height: 300px;
 }
 
-.japan-scrapbook .photo-placeholder strong {
+.article-scrapbook .photo-placeholder strong {
   font-size: 0.95rem;
 }
 
-.japan-scrapbook .photo-placeholder code {
+.article-scrapbook .photo-placeholder code {
   margin-top: 0.45rem;
   font-size: 0.72rem;
   overflow-wrap: anywhere;
   white-space: normal;
 }
 
-.japan-scrapbook .photo-caption {
+.article-scrapbook .photo-caption {
   color: var(--muted);
   font-size: 0.85rem;
   line-height: 1.5;
   margin: 0.45rem 0.1rem 0;
 }
 
-.japan-scrapbook .journal-note {
+.article-scrapbook .journal-note {
   background: var(--paper);
   border-left: 3px solid var(--tape);
   padding: 1rem 1.2rem;
@@ -183,25 +183,25 @@
   line-height: 1.75;
 }
 
-.japan-scrapbook .end-note {
+.article-scrapbook .end-note {
   border-top: 1px solid #ded7c8;
   padding-top: 1.5rem;
   margin-top: 3rem;
 }
 
-.japan-scrapbook details {
+.article-scrapbook details {
   margin: 2rem 0;
   padding: 1rem 1.2rem;
   background: var(--paper);
   border-radius: 8px;
 }
 
-.japan-scrapbook summary {
+.article-scrapbook summary {
   cursor: pointer;
   font-weight: 700;
 }
 
-.japan-scrapbook table {
+.article-scrapbook table {
   display: block;
   max-width: 100%;
   overflow-x: auto;
@@ -209,60 +209,60 @@
 
 /* Medium screens */
 @media (max-width: 900px) {
-  .japan-scrapbook .photo-grid {
+  .article-scrapbook .photo-grid {
     gap: 0.7rem;
   }
 
-  .japan-scrapbook .photo-slot.wide {
+  .article-scrapbook .photo-slot.wide {
     grid-column: span 4;
   }
 
-  .japan-scrapbook .photo-slot.hero {
+  .article-scrapbook .photo-slot.hero {
     grid-column: span 6;
   }
 }
 
 /* Mobile: stack images so portraits remain readable and landscape photos can breathe. */
 @media (max-width: 600px) {
-  .japan-scrapbook .chapter {
+  .article-scrapbook .chapter {
     margin: 2.4rem 0;
   }
 
-  .japan-scrapbook .photo-grid {
+  .article-scrapbook .photo-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
     gap: 0.6rem;
   }
 
-  .japan-scrapbook .photo-grid--single .photo-slot,
-  .japan-scrapbook .photo-grid--landscape-portrait .photo-slot,
-  .japan-scrapbook .photo-grid--pair .photo-slot,
-  .japan-scrapbook .photo-grid--portraits .photo-slot,
-  .japan-scrapbook .photo-slot.wide,
-  .japan-scrapbook .photo-slot.hero {
+  .article-scrapbook .photo-grid--single .photo-slot,
+  .article-scrapbook .photo-grid--landscape-portrait .photo-slot,
+  .article-scrapbook .photo-grid--pair .photo-slot,
+  .article-scrapbook .photo-grid--portraits .photo-slot,
+  .article-scrapbook .photo-slot.wide,
+  .article-scrapbook .photo-slot.hero {
     grid-column: 1 / -1;
   }
 
-  .japan-scrapbook .photo-placeholder {
+  .article-scrapbook .photo-placeholder {
     min-height: 145px;
     padding: 0.75rem;
   }
 
-  .japan-scrapbook .photo-slot.wide .photo-placeholder,
-  .japan-scrapbook .photo-slot.hero .photo-placeholder {
+  .article-scrapbook .photo-slot.wide .photo-placeholder,
+  .article-scrapbook .photo-slot.hero .photo-placeholder {
     min-height: 145px;
   }
 
-  .japan-scrapbook .route {
+  .article-scrapbook .route {
     gap: 0.35rem;
   }
 }
 
 /* Japan scrapbook: disable the standard article grid. */
-.article-layout:has(.japan-scrapbook) {
+.article-layout:has(.article-scrapbook) {
   display: block;
 }
 
-.article-layout:has(.japan-scrapbook) .article-body {
+.article-layout:has(.article-scrapbook) .article-body {
   max-width: none;
   width: 100%;
   min-width: 0;
