@@ -278,7 +278,7 @@
 }
 
 /* hero reset */
-.hero {
+.article .hero {
   padding: 0;
 }
 
@@ -303,21 +303,21 @@
 }
 
 /* photo grid */
-.photo-grid {
+.article .photo-grid {
   display: grid;
   gap: 1rem;
   align-items: start;
   margin: 1.5rem 0 2rem;
 }
-.photo-grid--two {
+.article .photo-grid--two {
   grid-template-columns: repeat(2, minmax(0, 1fr));
 }
-.photo-grid--three {
+.article .photo-grid--three {
   grid-template-columns: repeat(3, minmax(0, 1fr));
 }
 
 /* figure and figcaption */
-figcaption {
+.article figcaption {
   margin-top: 0.45rem;
   color: var(--muted);
   font-size: 0.82rem;
@@ -325,7 +325,7 @@ figcaption {
 }
 
 /* photo-placeholder */
-.switzerland-guide .photo-placeholder {
+.article .photo-placeholder {
   min-height: 180px;
   display: flex;
   flex-direction: column;
