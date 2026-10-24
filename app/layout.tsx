@@ -3,6 +3,8 @@ import "../styles/globals.css";
 import "../styles/article.css";
 import "../styles/travel-editorial.css";
 import "../styles/scrapbook.css";
+import "../styles/switzerland-guide.css";
+import "../styles/china-guide.css";
 import { Header } from "../components/Header";
 import { Footer } from "../components/Footer";
 

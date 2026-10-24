@@ -12,10 +12,13 @@ export type Heading = {
 export type PostStyle =
   | "article"
   | "travel-editorial"
-  | "scrapbook";
+  | "scrapbook"
+  | "switzerland-guide"
+  | "china-guide";
 
 export type Post = {
   slug: string;
+  permalink: string;
   title: string;
   subtitle?: string;
   date: string;
@@ -31,10 +34,7 @@ export type Post = {
   style: PostStyle;
 };
 
-const postsDirectory = path.join(
-  process.cwd(),
-  "content/posts"
-);
+const postsDirectory = path.join(process.cwd(), "content/posts");
 
 function calculateReadingTime(content: string) {
   const words = content
@@ -55,9 +55,7 @@ function createExcerpt(content: string) {
     .replace(/\n+/g, " ")
     .trim();
 
-  return text.length > 180
-    ? `${text.slice(0, 180).trim()}…`
-    : text;
+  return text.length > 180 ? `${text.slice(0, 180).trim()}…` : text;
 }
 
 function extractHeadings(content: string): Heading[] {
@@ -87,20 +85,13 @@ function extractHeadings(content: string): Heading[] {
         level,
       };
     })
-    .filter(
-      (heading): heading is Heading =>
-        heading !== null
-    );
+    .filter((heading): heading is Heading => heading !== null);
 }
 
 export function getPosts(): Post[] {
   const files = fs
     .readdirSync(postsDirectory)
-    .filter(
-      (file) =>
-        file.endsWith(".md") ||
-        file.endsWith(".mdx")
-    );
+    .filter((file) => file.endsWith(".md") || file.endsWith(".mdx"));
 
   return files
     .map((filename) => {
@@ -111,46 +102,34 @@ export function getPosts(): Post[] {
 
       const { data, content } = matter(source);
 
-      const slug = filename.replace(
-        /\.(md|mdx)$/,
-        ""
-      );
+      const slug = data.permalink;
 
       return {
         slug,
+
+        permalink: data.permalink,
 
         title: data.title ?? slug,
 
         subtitle: data.subtitle,
 
         date: data.date
-          ? new Date(data.date)
-              .toISOString()
-              .slice(0, 10)
+          ? new Date(data.date).toDateString()
           : slug.slice(0, 10),
 
-        category: data.category ?? "Travel",
+        category: data.category,
 
-        tags: Array.isArray(data.tags)
-          ? data.tags
-          : [],
+        tags: Array.isArray(data.tags) ? data.tags : [],
 
-        excerpt:
-          data.excerpt ??
-          createExcerpt(content),
+        excerpt: data.excerpt ?? createExcerpt(content),
 
-        readingTime:
-          calculateReadingTime(content),
+        readingTime: calculateReadingTime(content),
 
-        featured:
-          data.featured ?? false,
+        featured: data.featured ?? false,
 
         content,
 
-        image:
-          data.image ??
-          data.coverImage ??
-          data["cover-img"],
+        image: data.image ?? data.coverImage ?? data["cover-img"],
 
         thumbnailImage:
           data.thumbnailImage ??
@@ -158,27 +137,22 @@ export function getPosts(): Post[] {
           data.coverImage ??
           data["cover-img"],
 
-        headings:
-          extractHeadings(content),
+        headings: extractHeadings(content),
 
         style:
+          data.style === "china-guide" ||
+          data.style === "switzerland-guide" ||
           data.style === "scrapbook" ||
           data.style === "travel-editorial"
             ? data.style
             : "article",
       };
     })
-    .sort(
-      (a, b) =>
-        new Date(b.date).getTime() -
-        new Date(a.date).getTime()
-    );
+    .sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime());
 }
 
 export const posts = getPosts();
 
-export function getPost(slug: string) {
-  return posts.find(
-    (post) => post.slug === slug
-  );
+export function getPost(permalink: string) {
+  return posts.find((post) => post.permalink === permalink);
 }

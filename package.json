@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@next/mdx": "^16.4.3",
     "github-slugger": "^2.0.0",
     "gray-matter": "^4.0.3",
     "next": "^15.5.0",
@@ -16,7 +17,8 @@
     "react": "^19.1.0",
     "react-dom": "^19.1.0",
     "react-markdown": "^10.1.0",
-    "remark-gfm": "^4.0.1"
+    "remark-gfm": "^4.0.1",
+    "remark-unravel-mdx": "^1.0.0"
   },
   "devDependencies": {
     "@types/node": "^22.0.0",

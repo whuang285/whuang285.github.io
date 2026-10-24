@@ -1,9 +1,13 @@
 ---
+permalink: 2023-canyons
 style: "travel-editorial"
 title: Canyons Road Trip - Grand Canyon, Antelope, Zion
 subtitle: 3 day itinerary for the Grand Canyon, Antelope, and Zion
+excerpt: ""
+date: 2023-05-28
 cover-img: /assets/img/2023-05-28-canyons-roadtrip/antelope.png
 thumbnail-img: /assets/img/2023-05-28-canyons-roadtrip/antelope.png
+category: "Travel"
 tags: [travel]
 ---
 

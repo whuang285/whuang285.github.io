@@ -36,7 +36,7 @@
   font-size: 0.9rem;
 }
 
-.article-scrapbook .route a {
+.article-scrapbook .route span:not(:nth-child(even)) {
   border: 1px solid #ded7c8;
   border-radius: 99px;
   padding: 0.35rem 0.7rem;
@@ -257,7 +257,7 @@
   }
 }
 
-/* Japan scrapbook: disable the standard article grid. */
+/* scrapbook: disable the standard article grid. */
 .article-layout:has(.article-scrapbook) {
   display: block;
 }

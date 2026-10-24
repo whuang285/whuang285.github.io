@@ -32,21 +32,18 @@ export default function Blog() {
       </header>
 
       <div className="archive">
-        {" "}
         {Object.entries(groups)
           .sort(([yearA], [yearB]) => Number(yearB) - Number(yearA))
           .map(([year, yearPosts]) => (
             <section className="archive-year" key={year}>
-              {" "}
-              <h2>{year}</h2>{" "}
+              <h2>{year}</h2>
               <div className="archive-posts">
-                {" "}
                 {yearPosts.map((post) => (
                   <PostRow key={post.slug} post={post} />
-                ))}{" "}
-              </div>{" "}
+                ))}
+              </div>
             </section>
-          ))}{" "}
+          ))}
       </div>
     </div>
   );

@@ -9,7 +9,7 @@
 .article-head {
   max-width: 850px;
   margin: auto;
-  padding-bottom: 80px;
+  padding-bottom: 30px;
 }
 .back {
   font-size: 13px;
@@ -42,20 +42,27 @@
   margin-top: 0;
 }
 .article-body p {
+  font-size: 16px;
   margin: 0 0 28px;
 }
 .article-body h2 {
-  margin: 70px 0 22px;
+  margin: 64px 0 24px;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 32px;
-  line-height: 1.15;
-  letter-spacing: -0.04em;
+  line-height: 1.25;
+  letter-spacing: -0.02em;
 }
 .article-body h3 {
-  margin: 50px 0 18px;
+  margin: 48px 0 16px;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 24px;
-  line-height: 1.2;
+  line-height: 1.33;
+}
+.article-body h4 {
+  margin: 32px 0 16px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  line-height: 1.4;
 }
 .article-body ul,
 .article-body ol {
@@ -262,5 +269,15 @@
   }
   .toc-link--subsection {
     padding-left: 0;
+  }
+
+  /* route */
+  .route span:not(:nth-child(even)) {
+    border: 1px solid var(--line);
+    border-radius: 999px;
+    padding: 0.35rem 0.7rem;
+    background: var(--paper);
+    text-decoration: none;
+    color: inherit;
   }
 }

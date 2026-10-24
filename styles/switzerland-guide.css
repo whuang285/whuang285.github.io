@@ -1,0 +1,312 @@
+/* disable the standard article grid. */
+.article-layout:has(.switzerland-guide) {
+  display: block;
+}
+
+.article-layout:has(.switzerland-guide) .article-body {
+  max-width: none;
+  width: 100%;
+  min-width: 0;
+}
+
+/* Scoped styles for the Switzerland winter guide only.
+   Import this from the post-specific stylesheet loader, not globals.css. */
+
+.switzerland-guide {
+  --swiss-ink: #292d2d;
+  --swiss-muted: #697170;
+  --swiss-paper: #f7f7f3;
+  --swiss-line: #d9dfdc;
+  --swiss-accent: #a33a3a;
+  color: var(--swiss-ink);
+  width: 100%;
+  max-width: 1040px;
+  margin-inline: auto;
+  padding-inline: clamp(12px, 2.5vw, 28px);
+  box-sizing: border-box;
+  overflow-wrap: anywhere;
+  line-height: 1.75;
+}
+
+.switzerland-guide *,
+.switzerland-guide *::before,
+.switzerland-guide *::after {
+  box-sizing: border-box;
+}
+
+.switzerland-guide div {
+  max-width: 48rem;
+  margin: 0 0 1rem;
+}
+
+.switzerland-guide h2 {
+  margin: 0.2rem 0 0.85rem;
+  line-height: 1.25;
+  letter-spacing: -0.02em;
+}
+
+.switzerland-guide h3 {
+  margin: 1.5rem 0 0.5rem;
+  font-size: 1.12rem;
+  line-height: 1.35;
+}
+
+.switzerland-guide h4 {
+  margin: 1rem 0 0.5rem;
+  font-size: 1rem;
+  line-height: 1.1;
+}
+
+.switzerland-guide__intro {
+  max-width: 52rem;
+  font-size: 1.12rem;
+  line-height: 1.8;
+}
+
+.switzerland-guide__route {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.4rem;
+  margin: 1.35rem 0 0.7rem;
+  color: var(--swiss-muted);
+  font-size: 0.88rem;
+}
+
+.switzerland-guide .route span:not(:nth-child(even)) {
+  border: 1px solid var(--swiss-line);
+  border-radius: 999px;
+  padding: 0.25rem 0.65rem;
+  background: var(--swiss-paper);
+}
+
+.switzerland-guide__meta {
+  color: var(--swiss-muted);
+  font-size: 0.86rem;
+  margin-bottom: 1.5rem !important;
+}
+
+.switzerland-guide__hero,
+.switzerland-guide__media,
+.switzerland-guide__photo-grid figure {
+  min-width: 0;
+  margin: 1.5rem 0 2rem;
+}
+
+.switzerland-guide__hero img,
+.switzerland-guide__media img,
+.switzerland-guide__photo-grid img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+.switzerland-guide figcaption {
+  margin-top: 0.45rem;
+  color: var(--swiss-muted);
+  font-size: 0.82rem;
+  line-height: 1.5;
+}
+
+.switzerland-guide__photo-placeholder {
+  min-height: 180px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.4rem;
+  padding: 1rem;
+  text-align: center;
+  background: linear-gradient(135deg, #e9eeeb, #f7f8f5);
+  border: 1px dashed #aebbb5;
+  border-radius: 5px;
+  color: #53605a;
+}
+
+.switzerland-guide__hero .switzerland-guide__photo-placeholder {
+  min-height: 260px;
+}
+
+.switzerland-guide__photo-placeholder strong {
+  font-size: 0.95rem;
+}
+
+.switzerland-guide__photo-placeholder code {
+  font-size: 0.74rem;
+  white-space: normal;
+  overflow-wrap: anywhere;
+}
+
+.switzerland-guide__section {
+  margin: 3.2rem 0;
+  padding-top: 0.25rem;
+  min-width: 0;
+}
+
+.switzerland-guide__eyebrow {
+  margin: 0 0 0.35rem !important;
+  color: var(--swiss-accent);
+  font-size: 0.73rem;
+  font-weight: 750;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.switzerland-guide__table-wrap {
+  width: 100%;
+  overflow-x: auto;
+  margin: 1.25rem 0;
+}
+
+.switzerland-guide table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.92rem;
+}
+
+.switzerland-guide__fare-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.92rem;
+  font-variant-numeric: tabular-nums;
+}
+
+.switzerland-guide__fare-table th,
+.switzerland-guide__fare-table td {
+  padding: 0.8rem 0.9rem;
+  text-align: left;
+  border-bottom: 1px solid var(--border, #e5e5e5);
+}
+
+.switzerland-guide__fare-table thead th {
+  font-size: 0.78rem;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: var(--muted, #666);
+  background: var(--surface, #f7f7f7);
+}
+
+.switzerland-guide__fare-table tbody tr:last-child td {
+  border-bottom: 0;
+}
+
+.switzerland-guide__fare-table-highlight {
+  font-weight: 600;
+  background: var(--surface, #f7f7f7);
+}
+
+.switzerland-guide__fare-table td:nth-child(n + 3),
+.switzerland-guide__fare-table th:nth-child(n + 3) {
+  text-align: right;
+  white-space: nowrap;
+}
+
+.switzerland-guide th,
+.switzerland-guide td {
+  padding: 0.75rem 0.8rem;
+  border-bottom: 1px solid var(--swiss-line);
+  text-align: left;
+  vertical-align: top;
+}
+
+.switzerland-guide th {
+  background: var(--swiss-paper);
+  font-weight: 700;
+}
+
+.switzerland-guide__note,
+.switzerland-guide__callout,
+.switzerland-guide__tip {
+  max-width: 50rem;
+  margin: 1.4rem 0;
+  padding: 0rem 1.2rem;
+  background: var(--swiss-paper);
+  border-left: 3px solid var(--swiss-accent);
+}
+
+.switzerland-guide__note {
+  font-size: 0.9rem;
+}
+
+.switzerland-guide__callout h3 {
+  margin-top: 0;
+}
+
+.switzerland-guide__small {
+  color: var(--swiss-muted);
+  font-size: 0.86rem;
+  margin-bottom: 0 !important;
+}
+
+.switzerland-guide__photo-grid {
+  display: grid;
+  gap: 1rem;
+  align-items: start;
+  margin: 1.5rem 0 2rem;
+}
+
+.switzerland-guide__photo-grid--two {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.switzerland-guide__photo-grid--three {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.switzerland-guide__photo-grid figure {
+  margin: 0;
+}
+
+.switzerland-guide__checklist {
+  max-width: 50rem;
+  padding-left: 1.25rem;
+}
+
+.switzerland-guide__checklist li {
+  margin: 0.65rem 0;
+  padding-left: 0.2rem;
+}
+
+.switzerland-guide__section--end {
+  border-top: 1px solid var(--swiss-line);
+  padding-top: 2rem;
+}
+
+/* Keep the layout readable on tablets and phones. */
+@media (max-width: 600px) {
+  .switzerland-guide__fare-table {
+    font-size: 0.8rem;
+  }
+
+  .switzerland-guide__fare-table th,
+  .switzerland-guide__fare-table td {
+    padding: 0.65rem 0.45rem;
+  }
+}
+
+@media (max-width: 700px) {
+  .switzerland-guide__photo-grid--three {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .switzerland-guide__section {
+    margin: 2.5rem 0;
+  }
+
+  .switzerland-guide__hero .switzerland-guide__photo-placeholder {
+    min-height: 200px;
+  }
+}
+
+@media (max-width: 520px) {
+  .switzerland-guide__photo-grid--two,
+  .switzerland-guide__photo-grid--three {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .switzerland-guide th,
+  .switzerland-guide td {
+    padding: 0.6rem;
+  }
+}
