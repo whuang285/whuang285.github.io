@@ -63,7 +63,7 @@
   line-height: 1.8;
 }
 
-.switzerland-guide__route {
+/* .switzerland-guide .route {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
@@ -78,7 +78,7 @@
   border-radius: 999px;
   padding: 0.25rem 0.65rem;
   background: var(--swiss-paper);
-}
+} */
 
 .switzerland-guide__meta {
   color: var(--swiss-muted);

@@ -270,14 +270,23 @@
   .toc-link--subsection {
     padding-left: 0;
   }
+}
+/* route */
+.article .route {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.4rem;
+  margin: 1.35rem 0 0.7rem;
+  color: var(--muted);
+  font-size: 0.9rem;
+}
 
-  /* route */
-  .route span:not(:nth-child(even)) {
-    border: 1px solid var(--line);
-    border-radius: 999px;
-    padding: 0.35rem 0.7rem;
-    background: var(--paper);
-    text-decoration: none;
-    color: inherit;
-  }
+.article .route span:not(:nth-child(even)) {
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  padding: 0.35rem 0.7rem;
+  background: var(--paper);
+  text-decoration: none;
+  color: inherit;
 }
