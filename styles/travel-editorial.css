@@ -16,30 +16,6 @@
   line-height: 1.5;
 }
 
-/* Text + image editorial split */
-.split-section {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 3.5rem;
-  align-items: center;
-  margin: 5rem 0;
-}
-.split-section--left .split-section__image {
-  order: -1;
-}
-.split-section__text {
-  min-width: 0;
-}
-.split-section__image {
-  margin: 0;
-}
-.split-section__image img {
-  display: block;
-  width: 100%;
-  height: auto;
-  border-radius: 2px;
-}
-
 /* Information card */
 .info-card {
   margin: 3rem 0;
@@ -104,14 +80,6 @@
 
 /* responsive rules */
 @media (max-width: 700px) {
-  .split-section {
-    grid-template-columns: 1fr;
-    gap: 1.5rem;
-    margin: 3.5rem 0;
-  }
-  .split-section--left .split-section__image {
-    order: initial;
-  }
   .feature-image {
     margin: 2.5rem 0;
   }

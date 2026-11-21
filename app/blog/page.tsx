@@ -3,7 +3,7 @@ import { posts } from "../../content/posts";
 
 function groupPostsByYear() {
   return posts.reduce<Record<string, typeof posts>>((groups, post) => {
-    const year = new Date(post.date).getFullYear().toString();
+    const year = post.date.slice(0, 4);
 
     if (!groups[year]) {
       groups[year] = [];

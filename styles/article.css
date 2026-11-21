@@ -108,22 +108,6 @@
   line-height: 1.6;
 }
 
-/* notes */
-.migration-note {
-  font-family: Arial, sans-serif;
-  background: #ebe8df;
-  border: 1px solid var(--line);
-  padding: 22px;
-  margin-top: 60px;
-  font-size: 14px;
-  line-height: 1.5;
-}
-.migration-note span {
-  display: block;
-  color: var(--muted);
-  margin-top: 5px;
-}
-
 /* previous/next post navigation */
 .article-nav {
   max-width: 700px;
@@ -150,17 +134,6 @@
 }
 .article-nav .next {
   text-align: right;
-}
-
-/* standard article hero image */
-.article-hero {
-  max-width: 1000px;
-  margin: 0 auto 80px;
-}
-.article-hero img {
-  display: block;
-  width: 100%;
-  height: auto;
 }
 
 /* article grid and toc layout */
@@ -239,9 +212,6 @@
   .article-nav .next {
     text-align: left;
   }
-  .article-hero {
-    margin-bottom: 50px;
-  }
 }
 
 @media (max-width: 900px) {
@@ -280,6 +250,30 @@
 /* hero reset */
 .article .hero {
   padding: 0;
+}
+
+/* common article features */
+.article .eyebrow {
+  margin: 0 0 0.35rem !important;
+  color: var(--accent);
+  font-size: 0.73rem;
+  font-weight: 750;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+.article .note,
+.article .callout,
+.article .tip {
+  max-width: 50rem;
+  margin: 1.4rem 0;
+  padding: 0rem 1.2rem;
+  background: var(--paper);
+  border-left: 3px solid var(--accent);
+}
+.article .small {
+  color: var(--muted);
+  font-size: 0.86rem;
+  margin-bottom: 0 !important;
 }
 
 /* route */

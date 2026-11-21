@@ -4,15 +4,7 @@ import GithubSlugger from "github-slugger";
 import { MDXRemote } from "next-mdx-remote/rsc";
 
 import { getPost, posts } from "../../../content/posts";
-import {
-  ScrapbookPhoto,
-  ScrapbookPair,
-  ScrapbookCollage,
-  ScrapbookStory,
-} from "../../../components/Scrapbook";
-
 import FeatureImage from "../../../components/FeatureImage";
-import SplitSection from "../../../components/SplitSection";
 import InfoCard from "../../../components/InfoCard";
 import TravelTip from "../../../components/TravelTip";
 
@@ -93,13 +85,8 @@ export default async function Article({
 
   const components = {
     FeatureImage,
-    SplitSection,
     InfoCard,
     TravelTip,
-    ScrapbookPhoto,
-    ScrapbookPair,
-    ScrapbookCollage,
-    ScrapbookStory,
     ...headingComponents,
   };
 
@@ -114,10 +101,11 @@ export default async function Article({
           <span>{post.category}</span>
 
           <span>
-            {new Date(post.date).toLocaleDateString("en-US", {
+            {new Date(`${post.date}T00:00:00Z`).toLocaleDateString("en-US", {
               month: "long",
               day: "numeric",
               year: "numeric",
+              timeZone: "UTC",
             })}
           </span>
 

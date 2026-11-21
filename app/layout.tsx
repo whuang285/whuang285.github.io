@@ -4,6 +4,7 @@ import "../styles/article.css";
 import "../styles/travel-editorial.css";
 import "../styles/scrapbook.css";
 import "../styles/switzerland-guide.css";
+import "../styles/dashboard.css";
 import { Header } from "../components/Header";
 import { Footer } from "../components/Footer";
 

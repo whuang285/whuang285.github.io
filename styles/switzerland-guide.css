@@ -67,7 +67,7 @@
   border-radius: 5px;
 }
 
-.switzerland-guide .hero .switzerland-guide .photo-placeholder {
+.switzerland-guide .hero .photo-placeholder {
   min-height: 260px;
 }
 
@@ -85,15 +85,6 @@
   margin: 3.2rem 0;
   padding-top: 0.25rem;
   min-width: 0;
-}
-
-.switzerland-guide .eyebrow {
-  margin: 0 0 0.35rem !important;
-  color: var(--accent);
-  font-size: 0.73rem;
-  font-weight: 750;
-  letter-spacing: 0.12em;
-  text-transform: uppercase;
 }
 
 .switzerland-guide .table-wrap {
@@ -215,7 +206,7 @@
     margin: 2.5rem 0;
   }
 
-  .switzerland-guide .hero .switzerland-guide .photo-placeholder {
+  .switzerland-guide .hero .photo-placeholder {
     min-height: 200px;
   }
 }

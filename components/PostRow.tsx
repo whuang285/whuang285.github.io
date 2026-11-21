@@ -5,10 +5,11 @@ export function PostRow({ post }: { post: Post }) {
   return (
     <Link href={`/blog/${post.slug}/`} className="post-row">
       <div className="post-row-date">
-        {new Date(post.date).toLocaleDateString("en-US", {
+        {new Date(`${post.date}T00:00:00Z`).toLocaleDateString("en-US", {
           month: "short",
           day: "2-digit",
           year: "numeric",
+          timeZone: "UTC",
         })}
       </div>
 
