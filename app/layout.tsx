@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import "../styles/globals.css";
 import "../styles/article.css";
+import "../styles/table.css";
 import "../styles/travel-editorial.css";
 import "../styles/scrapbook.css";
 import "../styles/switzerland-guide.css";
